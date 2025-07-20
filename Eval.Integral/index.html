@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - EcoVida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="Logo EcoVida">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-house me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="fas fa-screwdriver-wrench me-1"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="fas fa-envelope me-1"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carruselInicio" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/productoeco2.jpeg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/productoeco4.png" class="d-block w-100" alt="Imagen 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <!-- Título "EcoVida" -->
+         <h1 class="text-center text-success mb-4">EcoVida</h1>
+
+    <!-- Cards -->
+    <div class="container my-5">
+        <h2 class="text-center">Nuestros productos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/peines.JPG" class="card-img-top" alt="Producto A">
+                    <div class="card-body">
+                        <h5 class="card-title">Peines</h5>
+                        <p class="card-text">Peines de Bambú.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/potecremas.JPG" class="card-img-top" alt="Producto A">
+                    <div class="card-body">
+                        <h5 class="card-title">Potes</h5>
+                        <p class="card-text">Potes pequeños para almacenar cremas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/shampoo.JPG" class="card-img-top" alt="Producto A">
+                    <div class="card-body">
+                        <h5 class="card-title">Envases</h5>
+                        <p class="card-text">Envases grandes para almacenar shampoo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 EcoVida. Todos los derechos reservados.</p>
+
+            <!-- Enlaces -->
+            <div class="d-flex justify-content-center mb-3">
+                <a href="index.html" class="text-white me-3 text-decoration-none">Inicio</a>
+                <a href="servicios.html" class="text-white me-3 text-decoration-none">Servicios</a>
+                <a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="mb-3">
+                <a href="#" class="text-white me-3" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white me-3" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-white me-3" title="Twitter"><i class="fab fa-x-twitter fa-lg"></i></a>
+                <a href="#" class="text-white" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+            </div>
+
+            <p class="small">Diseñado por Daniela Vasquez</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
