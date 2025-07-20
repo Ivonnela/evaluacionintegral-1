@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - EcoVida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="Logo EcoVida">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-house me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="fas fa-screwdriver-wrench me-1"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="fas fa-envelope me-1"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center">Contáctanos</h2>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <!-- Formulario -->
+                <form id="formContacto">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <!-- Mapa -->
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla -->
+        <table class="table table-bordered table-striped mt-4">
+  <thead class="table-success">
+    <tr>
+      <th>Servicio</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eco Asesoría</td>
+      <td>Sesión personalizada sobre hábitos sostenibles</td>
+      <td>S/ 100</td>
+    </tr>
+    <tr>
+      <td>Kit ecológico</td>
+      <td>Incluye botella, cepillo de bambú y bolsas reutilizables</td>
+      <td>S/ 85</td>
+    </tr>
+    <tr>
+      <td>Entrega verde</td>
+      <td>Envío en bicicleta dentro de Lima</td>
+      <td>S/ 15</td>
+    </tr>
+  </tbody>
+</table>
+
+        <!-- Modal -->
+        <button type="button" class="btn btn-info mt-3" data-bs-toggle="modal" data-bs-target="#miModal">Ver información
+            adicional</button>
+
+        <div class="modal fade" id="miModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Gracias por escribirnos</h5>
+                    </div>
+                    <div class="modal-body">Pronto nos comunicaremos contigo.</div>
+                    <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 EcoVida. Todos los derechos reservados.</p>
+
+            <!-- Enlaces -->
+            <div class="d-flex justify-content-center mb-3">
+                <a href="index.html" class="text-white me-3 text-decoration-none">Inicio</a>
+                <a href="servicios.html" class="text-white me-3 text-decoration-none">Servicios</a>
+                <a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="mb-3">
+                <a href="#" class="text-white me-3" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white me-3" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-white me-3" title="Twitter"><i class="fab fa-x-twitter fa-lg"></i></a>
+                <a href="#" class="text-white" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+            </div>
+
+            <p class="small">Diseñado por Daniela Vasquez</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
